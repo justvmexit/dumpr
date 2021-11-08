@@ -9,6 +9,9 @@ before using dumper.exe you have to load the driver using your preferred mapper.
 and then it's just
 `dumper.exe notepad.exe` or `dumper.exe EscapeFromTarkov.exe`
 
+# coding style
+before anyone go and judge me i mix camel case and snake case because Windows Kernel stuff just matches camel case while snake case is more my personal coding style.
+
 # dependencies
 requires Visual Studio 2019
 requires Windows Driver Kit (WDK)
