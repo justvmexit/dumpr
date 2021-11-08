@@ -1,6 +1,7 @@
 # dumpr
 A process dumper written in C++ 17 with Windows Driver Kit using ioctl for communication between kernel-mode <-> user-mode even if handles are stripped.
-![https://cdn.discordapp.com/attachments/895206720702386217/907260039448891422/unknown.png]
+
+!(img)[https://cdn.discordapp.com/attachments/895206720702386217/907260039448891422/unknown.png]
 
 # usage
 before using dumper.exe you have to load the driver using your preferred mapper.
