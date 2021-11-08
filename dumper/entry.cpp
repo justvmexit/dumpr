@@ -46,8 +46,6 @@ std::uint32_t main(std::uint32_t argc, char** argv)
 		return 0;
 	}
 
-	std::printf("%s: fetched nt headers\n", argv[1]);
-
 	PIMAGE_SECTION_HEADER section = IMAGE_FIRST_SECTION(new_nt);
 	for (int i = 0; i < new_nt->FileHeader.NumberOfSections; i++, section++)
 	{
@@ -55,7 +53,7 @@ std::uint32_t main(std::uint32_t argc, char** argv)
 		section->PointerToRawData = section->VirtualAddress;
 	}
 
-	std::printf("%s: fetched sections\n", argv[1]);
+	std::printf("%s: fixed sections\n", argv[1]);
 
 	char* filename = reinterpret_cast<char*>(malloc(strlen(argv[1]) + 10));
 	sprintf(filename, "%s_dump.exe", argv[1]);
